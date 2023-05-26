@@ -22,15 +22,18 @@ const page = () => {
 
   return (
     <div className={style.mainCadastro}>
-        <h2>Cadastro</h2>
         <FormCadastro onSubmit={handleSubmit(onSubmit)}>
+        <h2>Cadastro</h2>
             <input type="email" {...register("email")} placeholder='Email...'/>
-            <input type="text" {...register("name")} placeholder='Nome'/>
+            <input type="text" {...register("name")} placeholder='Nome...'/>
             <input type="password" {...register("password")} placeholder='Senha...'/>
             <input type="password" {...register("confirmPassword")} placeholder='Confirme sua senha...'/>
             <input type="text" {...register("img")} placeholder='Imagem de perfil...'/>
             <button type="submit">Enviar</button>
         </FormCadastro>
+        <div>
+          <h2>Espaço para lottie</h2>
+        </div>
     </div>
   )
 }
