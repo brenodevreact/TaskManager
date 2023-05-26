@@ -7,10 +7,7 @@ import Link from 'next/link';
 
 type Inputs = {
     email: string,
-    name: string,
     password: string,
-    confirmPassword: string,
-    img: string,
 };
 
 const page = () => {
@@ -24,16 +21,11 @@ const page = () => {
   return (
     <div className={style.mainCadastro}>
         <FormCadastro onSubmit={handleSubmit(onSubmit)}>
-        <h2>Cadastro</h2>
+        <h2>Login</h2>
             <input type="email" {...register("email")} placeholder='Email...'/>
-            <input type="text" {...register("name")} placeholder='Nome...'/>
             <input type="password" {...register("password")} placeholder='Senha...'/>
-            <input type="password" {...register("confirmPassword")} placeholder='Confirme sua senha...'/>
-            <input type="text" {...register("img")} placeholder='Imagem de perfil...'/>
-            <button type="submit">Enviar</button>
-
-            <Link href={"/login"}>Já possui cadastro?</Link>
-
+            <button type="submit">Continuar</button>
+            <Link href={"/cadastro"}>Ainda não possui cadastro?</Link>
         </FormCadastro>
         <div>
           <h2>Espaço para lottie</h2>
