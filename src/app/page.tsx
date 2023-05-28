@@ -2,6 +2,7 @@ import Header from "@/components/Header/header";
 import MainHome from "@/components/MainHome/mainhome";
 import Link from "next/link";
 import style from "./page.module.css"
+import LottieAnimation from "@/components/LottieHome";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
 
       <MainHome />
 
-      <div>buceta</div>
+      <div><LottieAnimation /> </div>
     </main>
   )
 }
