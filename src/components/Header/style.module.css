@@ -30,4 +30,9 @@
     color: white;
     text-decoration: none;
     font-size: 24px;
+    transition: transform 0.5 ease-in;
+}
+
+.header a:hover {
+    transform: scale(1.07);
 }
