@@ -5,6 +5,7 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import FormCadastro from '@/components/Form/FormCadastro/FormCadastro';
 import Link from 'next/link';
 import Header from '@/components/Header/header';
+import LottieAnimation from '@/components/LottieLogin';
 
 type Inputs = {
   email: string,
@@ -40,7 +41,7 @@ const page = () => {
         <Link href={"/cadastro"} className={style.link}>Ainda não possui cadastro?</Link>
       </FormCadastro>
       <div>
-        <h2>Espaço para lottie</h2>
+        <LottieAnimation />
       </div>
     </div>
   )
