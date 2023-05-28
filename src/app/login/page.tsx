@@ -4,6 +4,7 @@ import style from "./style.module.css"
 import { useForm, SubmitHandler } from 'react-hook-form';
 import FormCadastro from '@/components/Form/FormCadastro/FormCadastro';
 import Link from 'next/link';
+import Header from '@/components/Header/header';
 
 type Inputs = {
     email: string,
@@ -20,6 +21,17 @@ const page = () => {
 
   return (
     <div className={style.mainCadastro}>
+        <Header>
+        <Link href={"/"}>
+          <h2>TManager</h2>
+        </Link>
+
+          <nav> 
+            <Link href={"/cadastro"}>Cadastro</Link>
+            <Link href={"/"}>Home</Link>
+          </nav>
+        </Header>
+
         <FormCadastro onSubmit={handleSubmit(onSubmit)}>
         <h2>Login</h2>
             <input type="email" {...register("email")} placeholder='Email...'/>

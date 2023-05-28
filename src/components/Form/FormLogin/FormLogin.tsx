@@ -7,7 +7,7 @@ type Props = {
     onSubmit: (e?: React.BaseSyntheticEvent) => Promise<void>;
   };
 
-const FormCadastro = ({children, onSubmit }: Props) => {
+const FormLogin = ({children, onSubmit }: Props) => {
   return (
     <form className={style.form} onSubmit={onSubmit}>
        {children} 
@@ -15,4 +15,4 @@ const FormCadastro = ({children, onSubmit }: Props) => {
   )
 }
 
-export default FormCadastro
+export default FormLogin
