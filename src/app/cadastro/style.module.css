@@ -19,3 +19,9 @@
     color: white;
     background-color: var(--brand);
 }
+
+.link {
+    color: var(--brand);
+    text-decoration: none;
+    font-weight: bold;
+}

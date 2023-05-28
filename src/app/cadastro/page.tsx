@@ -42,9 +42,9 @@ const page = () => {
         <input type="password" {...register("password")} placeholder='Senha...' />
         <input type="password" {...register("confirmPassword")} placeholder='Confirme sua senha...' />
         <input type="text" {...register("img")} placeholder='Imagem de perfil...' />
-        <button type="submit">Enviar</button>
+        <button type="submit">Continuar</button>
 
-        <Link href={"/login"}>Já possui cadastro?</Link>
+        <Link href={"/login"} className={style.link}>Já possui cadastro?</Link>
 
       </FormCadastro>
       <div>
