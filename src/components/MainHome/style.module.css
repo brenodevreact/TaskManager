@@ -1,0 +1,36 @@
+.mainHome {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    align-items: flex-start;
+    justify-content: center;
+    
+    max-width: 50%;
+}
+
+.mainHome h2 {
+    font-size: 64px;
+    color: white;
+}
+
+.mainHome h3 {
+    font-size: 32px;
+    color: white;
+}
+
+.mainHome button { 
+    width: 200px;
+    height: 55px;
+    border-radius: 10px;
+
+    font-size: 24px;
+    color: white;
+    background-color: var(--brand);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.5 ease-in;
+}
+
+.mainHome button:hover {
+    transform: scale(1.01)
+}

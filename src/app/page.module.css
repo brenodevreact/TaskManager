@@ -1,0 +1,14 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 1010%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main div {
+    width: 50%;
+}
